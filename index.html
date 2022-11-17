@@ -4,9 +4,48 @@
     <meta charset="utf-8" />
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/46ffad99ed.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div></div>
+    <h1>Rock - Paper - Scissors</h1>
+    <div>
+      <h2>Choose your weapon</h2>
+      <div id="wrapper">
+        <button value="rock" id="rock">
+          <i class="fa-solid fa-hand-back-fist"></i>
+        </button>
+        <button value="paper" id="paper">
+          <i class="fa-solid fa-hand"></i>
+        </button>
+        <button value="scissors" id="scissors">
+          <i class="fa-solid fa-scissors"></i>
+        </button>
+      </div>
+    </div>
+    <div id="score-sec">
+      <div id="h-c">
+        <span id="human">human</span>
+        <span id="computer">computer</span>
+      </div>
+      <div id="score">
+        <span id="human-score">0</span>
+        <span id="computer-score">0</span>
+      </div>
+    </div>
+    <div id="play-again">
+      <div id="container">
+        <button id="play" onClick="refreshPage()">play again</button>
+        <p id="text"></p>
+      </div>
+    </div>
+
     <script src="js.js"></script>
   </body>
 </html>
